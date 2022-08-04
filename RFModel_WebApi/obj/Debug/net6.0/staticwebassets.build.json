@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "EgZ4OAWfKVtokOmtQoZF6Byz0VTmDiiC5PdzOEx9OFc=",
+  "Source": "RFModel_WebApi",
+  "BasePath": "_content/RFModel_WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,175 @@
+﻿{
+  "TrainingTime": 60,
+  "Scenario": "Recommendation",
+  "DataSource": {
+    "Type": "TabularFile",
+    "Version": 1,
+    "FilePath": "C:\\Users\\prave\\Downloads\\Train_Inpatientdata-1542865627584.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "BeneID",
+        "ColumnPurpose": "User",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 1
+      },
+      {
+        "ColumnName": "ClaimID",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 1
+      },
+      {
+        "ColumnName": "Provider",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 1
+      },
+      {
+        "ColumnName": "InscClaimAmtReimbursed",
+        "ColumnPurpose": "Item",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 1
+      },
+      {
+        "ColumnName": "AttendingPhysician",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 1
+      },
+      {
+        "ColumnName": "OperatingPhysician",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 1
+      },
+      {
+        "ColumnName": "Fraud_Reported",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 1
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 0,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "MatrixFactorization",
+        "Score": 0.31,
+        "RuntimeInSeconds": 1.8
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "MatrixFactorization",
+        "Score": 0.0195,
+        "RuntimeInSeconds": 1.7
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "MatrixFactorization",
+        "Score": -3.0831,
+        "RuntimeInSeconds": 1.7
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "MatrixFactorization",
+        "Score": 0.3924,
+        "RuntimeInSeconds": 1.6
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "MatrixFactorization",
+        "Score": -0.8015,
+        "RuntimeInSeconds": 2.3
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "MatrixFactorization",
+        "Score": -0.7787,
+        "RuntimeInSeconds": 2.3
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "MatrixFactorization",
+        "Score": -3.2245,
+        "RuntimeInSeconds": 2.2
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "MatrixFactorization",
+        "Score": 0.6101,
+        "RuntimeInSeconds": 2.3
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "MatrixFactorization",
+        "Score": -1.214,
+        "RuntimeInSeconds": 1.9
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "MatrixFactorization",
+        "Score": -0.3051,
+        "RuntimeInSeconds": 1.8
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "MatrixFactorization",
+        "Score": 0.455,
+        "RuntimeInSeconds": 2.3
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "MatrixFactorization",
+        "Score": -1.0738,
+        "RuntimeInSeconds": 6.4
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "MatrixFactorization",
+        "Score": -3.2096,
+        "RuntimeInSeconds": 2.4
+      }
+    ],
+    "Pipeline": "[{\"EstimatorType\":\"FeaturizeText\",\"Inputs\":[\"ClaimID\"],\"Outputs\":[\"ClaimID_tf\"]},{\"EstimatorType\":\"FeaturizeText\",\"Inputs\":[\"Provider\"],\"Outputs\":[\"Provider_tf\"]},{\"EstimatorType\":\"FeaturizeText\",\"Inputs\":[\"AttendingPhysician\"],\"Outputs\":[\"AttendingPhysician_tf\"]},{\"EstimatorType\":\"FeaturizeText\",\"Inputs\":[\"OperatingPhysician\"],\"Outputs\":[\"OperatingPhysician_tf\"]},{\"EstimatorType\":\"MapValueToKey\",\"Inputs\":[\"BeneID\"],\"Outputs\":[\"BeneID\"]},{\"EstimatorType\":\"MapValueToKey\",\"Inputs\":[\"InscClaimAmtReimbursed\"],\"Outputs\":[\"InscClaimAmtReimbursed\"]},{\"LabelColumnName\":\"Fraud_Reported\",\"MatrixColumnIndexColumnName\":\"BeneID\",\"MatrixRowIndexColumnName\":\"InscClaimAmtReimbursed\",\"ApproximationRank\":\"128\",\"LearningRate\":\"0.01\",\"NumberOfIterations\":\"10\",\"EstimatorType\":\"MatrixFactorization\",\"Inputs\":[\"Features\"],\"Outputs\":[\"Score\"]}]",
+    "MetricName": "RSquared"
+  },
+  "Type": "TrainingConfig",
+  "Version": 1
+}

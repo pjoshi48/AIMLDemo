@@ -1,0 +1,13 @@
+C:\Users\prave\source\repos\RFDemo\RFDemo\bin\Debug\net6.0\RFModel.zip
+C:\Users\prave\source\repos\RFDemo\RFDemo\bin\Debug\net6.0\RFDemo.deps.json
+C:\Users\prave\source\repos\RFDemo\RFDemo\bin\Debug\net6.0\RFDemo.dll
+C:\Users\prave\source\repos\RFDemo\RFDemo\bin\Debug\net6.0\RFDemo.pdb
+C:\Users\prave\source\repos\RFDemo\RFDemo\obj\Debug\net6.0\RFDemo.csproj.AssemblyReference.cache
+C:\Users\prave\source\repos\RFDemo\RFDemo\obj\Debug\net6.0\RFDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prave\source\repos\RFDemo\RFDemo\obj\Debug\net6.0\RFDemo.AssemblyInfoInputs.cache
+C:\Users\prave\source\repos\RFDemo\RFDemo\obj\Debug\net6.0\RFDemo.AssemblyInfo.cs
+C:\Users\prave\source\repos\RFDemo\RFDemo\obj\Debug\net6.0\RFDemo.csproj.CoreCompileInputs.cache
+C:\Users\prave\source\repos\RFDemo\RFDemo\obj\Debug\net6.0\RFDemo.dll
+C:\Users\prave\source\repos\RFDemo\RFDemo\obj\Debug\net6.0\refint\RFDemo.dll
+C:\Users\prave\source\repos\RFDemo\RFDemo\obj\Debug\net6.0\RFDemo.pdb
+C:\Users\prave\source\repos\RFDemo\RFDemo\obj\Debug\net6.0\ref\RFDemo.dll
